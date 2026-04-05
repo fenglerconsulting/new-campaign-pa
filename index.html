@@ -79,6 +79,27 @@
         .status-active { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: rgba(97,189,79,0.15); border: 1px solid rgba(97,189,79,0.3); border-radius: 100px; font-size: 13px; font-weight: 500; color: var(--green); }
         .status-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero { padding: 48px 16px 32px; }
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 15px; }
+            .hero-stats { gap: 24px; }
+            .stat-value { font-size: 28px; }
+            .container { padding: 0 16px; }
+            section { padding: 48px 0; }
+            .section-title { font-size: 24px; margin-bottom: 32px; }
+            .pipeline { padding-left: 32px; }
+            .pipeline::before { left: 15px; }
+            .pipe-dot { left: -24px; width: 16px; height: 16px; font-size: 8px; }
+            .pipe-card { padding: 16px; }
+            .pipe-title { font-size: 14px; }
+            .naming-grid { grid-template-columns: 1fr; }
+            .naming-example { font-size: 11px; overflow-x: auto; }
+            .example-body { font-size: 11px; overflow-x: auto; }
+            .footer-grid { gap: 24px; }
+        }
     </style>
 </head>
 <body>
