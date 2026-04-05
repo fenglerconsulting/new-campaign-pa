@@ -51,17 +51,6 @@
         .pipe-detail { font-size: 12px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05); line-height: 1.6; }
         .pipe-detail code { background: rgba(56,189,248,0.1); color: var(--accent); padding: 2px 6px; border-radius: 4px; font-size: 11px; }
 
-        /* Treatment Cards */
-        .treatments { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-        @media (max-width: 768px) { .treatments { grid-template-columns: 1fr; } }
-        .treat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; text-align: center; }
-        .treat-card:hover { border-color: rgba(56,189,248,0.3); }
-        .treat-emoji { font-size: 36px; margin-bottom: 12px; }
-        .treat-name { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px; }
-        .treat-sub { font-size: 12px; color: var(--text-muted); margin-bottom: 16px; }
-        .treat-specs { text-align: left; font-size: 12px; color: var(--text-muted); line-height: 1.8; }
-        .treat-specs strong { color: var(--text); }
-
         /* Live Example */
         .live-example { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
         .example-header { padding: 14px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
@@ -78,7 +67,7 @@
         .naming-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
         .naming-card h4 { font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
         .naming-example { font-family: 'SF Mono', monospace; font-size: 13px; color: #fff; background: var(--bg); padding: 10px 14px; border-radius: 8px; margin-bottom: 8px; }
-        .naming-desc { font-size: 12px; color: var(--text-muted); }
+        .naming-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
 
         /* Footer */
         .footer { padding: 48px 0; text-align: center; border-top: 1px solid var(--border); }
@@ -98,10 +87,9 @@
     <div class="container">
         <div class="hero-badge">FENGLER CONSULTING — INTERNE AUTOMATISIERUNG</div>
         <h1>Meta Campaign Creator</h1>
-        <p>Von "Erstelle Kampagne für Allahverdian" bis zur fertigen Lead-Ad in Meta — vollautomatisch, mit intelligenter Qualitätskontrolle aus Trello.</p>
+        <p>Erstellt komplette Meta Lead-Ad-Kampagnen für Patientengewinnung — CEREC, Teleskop-Zahnersatz und Feste Zähne an einem Tag — vollautomatisch, mit intelligenter Qualitätskontrolle aus Trello.</p>
         <div class="hero-stats">
             <div class="stat"><div class="stat-value">&lt; <span>3</span> Min</div><div class="stat-label">pro Kampagne</div></div>
-            <div class="stat"><div class="stat-value"><span>3</span></div><div class="stat-label">PA-Leistungen</div></div>
             <div class="stat"><div class="stat-value"><span>7</span></div><div class="stat-label">Objekte pro Kampagne</div></div>
             <div class="stat"><div class="stat-value"><span>0</span> EUR</div><div class="stat-label">Kosten</div></div>
         </div>
@@ -110,56 +98,10 @@
 
 <div class="container">
 
-<!-- Treatments -->
-<section>
-    <div class="section-label">Leistungen</div>
-    <div class="section-title">Drei PA-Treatments, ein Prozess</div>
-    <div class="treatments">
-        <div class="treat-card">
-            <div class="treat-emoji">🦷</div>
-            <div class="treat-name">CEREC</div>
-            <div class="treat-sub">Zahnkrone/Füllung in 1 Sitzung</div>
-            <div class="treat-specs">
-                <strong>Alter:</strong> 30–65 Jahre<br>
-                <strong>Radius:</strong> 50 km<br>
-                <strong>Budget:</strong> 30 EUR/Tag<br>
-                <strong>Headline:</strong> Zahnkrone/Füllung in 1 Sitzung in [Stadt]<br>
-                <strong>Copys:</strong> 7 bewährte Varianten
-            </div>
-        </div>
-        <div class="treat-card">
-            <div class="treat-emoji">🔩</div>
-            <div class="treat-name">TZE</div>
-            <div class="treat-sub">Teleskop-Zahnersatz</div>
-            <div class="treat-specs">
-                <strong>Alter:</strong> 45–65 Jahre<br>
-                <strong>Radius:</strong> 50 km<br>
-                <strong>Budget:</strong> 30 EUR/Tag<br>
-                <strong>Headline:</strong> Fester Zahnersatz in [Stadt]<br>
-                <strong>Copys:</strong> Standard-Template
-            </div>
-        </div>
-        <div class="treat-card">
-            <div class="treat-emoji">⚡</div>
-            <div class="treat-name">FZ1T</div>
-            <div class="treat-sub">Feste Zähne an einem Tag</div>
-            <div class="treat-specs">
-                <strong>Alter:</strong> 45–65 Jahre<br>
-                <strong>Radius:</strong> 50 km<br>
-                <strong>Budget:</strong> 30 EUR/Tag<br>
-                <strong>Headline:</strong> Feste Zähne an einem Tag in [Stadt]<br>
-                <strong>Copys:</strong> Standard-Template
-            </div>
-        </div>
-    </div>
-</section>
-
-<hr class="divider">
-
 <!-- Pipeline -->
 <section>
     <div class="section-label">Ablauf</div>
-    <div class="section-title">Was passiert, wenn du sagst: "Erstelle Kampagne"</div>
+    <div class="section-title">Was passiert, wenn du sagst: "Erstelle Kampagne für CEREC bei Mustermann"</div>
 
     <div class="pipeline">
         <div class="pipe-step">
@@ -187,7 +129,7 @@
             <div class="pipe-card">
                 <div class="pipe-label agent">Agent — Creative-Analyse</div>
                 <div class="pipe-title">Creatives analysieren und nach Konvention umbenennen</div>
-                <div class="pipe-desc">Bilder werden visuell analysiert (Motiv + Text erkannt). Videos werden aus dem Dateinamen abgeleitet. Einheitliche Namen für Cross-Client-Analyse.</div>
+                <div class="pipe-desc">Bilder werden visuell analysiert (Motiv + Text erkannt). Videos werden aus dem Dateinamen abgeleitet. Alle Creatives bekommen einheitliche Namen — so kann später ausgewertet werden, welcher Creative-Typ (z.B. Fräsmaschinen-Bild vs. Reel) über alle Kunden hinweg die meisten Leads bringt.</div>
                 <div class="pipe-detail"><code>4.png</code> → <code>cerec_geraet-fraesmaschine_90min-ohne-abdruck_01.png</code><br>Prüft auch: Stadt auf dem Bild korrekt? Format unterstützt?</div>
             </div>
         </div>
@@ -207,7 +149,7 @@
             <div class="pipe-card">
                 <div class="pipe-label auto">Automatisch — Meta API</div>
                 <div class="pipe-title">Creatives hochladen</div>
-                <div class="pipe-desc">Bilder und Videos werden zum Werbekonto hochgeladen. Videos >50 MB automatisch per Chunked Upload. Thumbnail wird automatisch abgerufen.</div>
+                <div class="pipe-desc">Bilder und Videos werden zum Werbekonto hochgeladen. Videos über 50 MB automatisch per Chunked Upload. Thumbnail wird automatisch abgerufen.</div>
             </div>
         </div>
 
@@ -216,8 +158,8 @@
             <div class="pipe-card">
                 <div class="pipe-label auto">Automatisch — Meta API</div>
                 <div class="pipe-title">Kampagne → AdSet → Creatives → Ads erstellen</div>
-                <div class="pipe-desc">Komplette Kampagnenstruktur in einem Durchlauf. CBO, Deutsch, Multi-Advertiser deaktiviert, Advantage+ deaktiviert, Instagram verknüpft.</div>
-                <div class="pipe-detail">Naming: <code>Allahverdian - CEREC - 05.04.26</code> | Ads: <code>C1 | C1</code>, <code>C2 | C1</code></div>
+                <div class="pipe-desc">Komplette Kampagnenstruktur wird in einem Durchlauf erstellt — inklusive aller Einstellungen, Targeting und Instagram-Verknüpfung.</div>
+                <div class="pipe-detail">Ergebnis: <code>Mustermann - CEREC - 05.04.26</code> mit Ads wie <code>cerec_geraet-fraesmaschine_90min_01 | C1</code></div>
             </div>
         </div>
 
@@ -257,7 +199,7 @@
     <div class="naming-grid">
         <div class="naming-card">
             <h4>Kampagne</h4>
-            <div class="naming-example">Allahverdian - CEREC - 05.04.26</div>
+            <div class="naming-example">Mustermann - CEREC - 05.04.26</div>
             <div class="naming-desc">Nachname - Leistung - Startdatum</div>
         </div>
         <div class="naming-card">
@@ -267,13 +209,13 @@
         </div>
         <div class="naming-card">
             <h4>Anzeigen</h4>
-            <div class="naming-example">C1 | C1 &nbsp;&nbsp; C2 | C1 &nbsp;&nbsp; C3 | C2</div>
-            <div class="naming-desc">C{Creative-Nr} | C{Copy-Nr} — ermöglicht A/B-Tests</div>
+            <div class="naming-example">cerec_geraet-fraesmaschine_90min_01 | C1</div>
+            <div class="naming-desc">Creative-Name aus der Konvention | Copy-Variante — so sieht man im Werbeanzeigenmanager sofort, welches Motiv und welcher Text läuft</div>
         </div>
         <div class="naming-card">
             <h4>Creatives</h4>
             <div class="naming-example">cerec_geraet-fraesmaschine_90min_01.png</div>
-            <div class="naming-desc">{treatment}_{motiv}_{text-fokus}_{nr} — für Cross-Client-Analyse</div>
+            <div class="naming-desc">Alle Kunden verwenden dieselben Creative-Typen. Durch einheitliche Namen kann ausgewertet werden, welcher Typ (z.B. Fräsmaschinen-Bild vs. Reel) über alle Kunden die beste Performance liefert.</div>
         </div>
     </div>
 </section>
@@ -297,10 +239,11 @@
             &nbsp;&nbsp;Account: &nbsp;&nbsp;act_766603839163364<br>
             &nbsp;&nbsp;Stadt: &nbsp;&nbsp;&nbsp;&nbsp;22041 Hamburg<br>
             &nbsp;&nbsp;Creatives: 2<br>
+            &nbsp;&nbsp;Copy: &nbsp;&nbsp;&nbsp;&nbsp;<span class="w">Vorsichtig abbeißen (Storytelling)</span><br>
             &nbsp;&nbsp;Headline: &nbsp;<span class="w">Zahnkrone/Füllung in 1 Sitzung in Hamburg</span><br><br>
 
             <span class="g">📋 Instant Form (PA)...</span><br>
-            &nbsp;&nbsp;<span class="g">✅ Form: 2635120153528026</span><br>
+            &nbsp;&nbsp;<span class="g">✅ Form: 2194232847982446</span><br>
             &nbsp;&nbsp;📤 Bild: cerec_geraet-fraesmaschine_90min-ohne-abdruck_01.png<br>
             &nbsp;&nbsp;<span class="g">✅ Hash: 49cf932a...</span><br>
             &nbsp;&nbsp;📤 Video (chunked, 125 MB): cerec_reel_was-kostet-cerec_01.mp4<br>
@@ -308,13 +251,13 @@
             &nbsp;&nbsp;<span class="g">✅ Video bereit</span><br><br>
 
             <span class="g">🎯 Kampagne: <span class="w">Allahverdian - CEREC - 05.04.26</span></span><br>
-            &nbsp;&nbsp;<span class="g">✅ ID: 120245125787870346</span><br><br>
+            &nbsp;&nbsp;<span class="g">✅ ID: 120245125912780346</span><br><br>
 
             <span class="g">📍 AdSet: Standard</span><br>
-            &nbsp;&nbsp;<span class="g">✅ ID: 120245125788420346</span><br><br>
+            &nbsp;&nbsp;<span class="g">✅ ID: 120245125913120346</span><br><br>
 
-            <span class="g">📢 Ad: <span class="w">C1 | C1</span> (PAUSED)</span> — Bild<br>
-            <span class="g">📢 Ad: <span class="w">C2 | C1</span> (PAUSED)</span> — Reel<br><br>
+            <span class="g">📢 Ad: <span class="w">cerec_geraet-fraesmaschine_90min-ohne-abdruck_01 | C1</span> (PAUSED)</span><br>
+            <span class="g">📢 Ad: <span class="w">cerec_reel_was-kostet-cerec_01 | C1</span> (PAUSED)</span><br><br>
 
             &nbsp;&nbsp;<span class="g">✅ Allahverdian - CEREC - 05.04.26</span><br>
             &nbsp;&nbsp;Ads: <span class="w">2/2</span><br><br>
@@ -343,3 +286,4 @@
 </div>
 </body>
 </html>
+
