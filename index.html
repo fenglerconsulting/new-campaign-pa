@@ -90,7 +90,7 @@
         <p>Erstellt komplette Meta Lead-Ad-Kampagnen für Patientengewinnung — CEREC, Teleskop-Zahnersatz und Feste Zähne an einem Tag — vollautomatisch, mit intelligenter Qualitätskontrolle aus Trello.</p>
         <div class="hero-stats">
             <div class="stat"><div class="stat-value">&lt; <span>3</span> Min</div><div class="stat-label">pro Kampagne</div></div>
-            <div class="stat"><div class="stat-value"><span>7</span></div><div class="stat-label">Objekte pro Kampagne</div></div>
+            <div class="stat"><div class="stat-value"><span>10</span></div><div class="stat-label">Schritte pro Kampagne</div></div>
             <div class="stat"><div class="stat-value"><span>0</span> EUR</div><div class="stat-label">Kosten</div></div>
         </div>
     </div>
@@ -166,6 +166,33 @@
         <div class="pipe-step">
             <div class="pipe-dot done">7</div>
             <div class="pipe-card">
+                <div class="pipe-label auto">Automatisch — Trello</div>
+                <div class="pipe-title">FenglerKunden-Karte verschieben</div>
+                <div class="pipe-desc">Die Kundenkarte wird automatisch in die Spalte „Überprüfen, ob Werbekampagnen laufen" verschoben — mit Fälligkeitsdatum in 2 Tagen. Dort checkt Claude Code am Fälligkeitstag die Ads und verlinkt den zuständigen OMM mit einer Analyse.</div>
+            </div>
+        </div>
+
+        <div class="pipe-step">
+            <div class="pipe-dot done">8</div>
+            <div class="pipe-card">
+                <div class="pipe-label auto">Automatisch — Airtable</div>
+                <div class="pipe-title">Stelle prüfen / anlegen</div>
+                <div class="pipe-desc">Prüft automatisch, ob die Stelle in Airtable bereits existiert. Falls ja → Status auf „Aktiv" setzen. Falls nein → neuen Datensatz anlegen und auf „Aktiv" setzen.</div>
+            </div>
+        </div>
+
+        <div class="pipe-step">
+            <div class="pipe-dot done">9</div>
+            <div class="pipe-card">
+                <div class="pipe-label auto">Automatisch — Trello</div>
+                <div class="pipe-title">Kunde auf seinem Board benachrichtigen</div>
+                <div class="pipe-desc">Der Kunde bekommt automatisch eine Nachricht auf seinem persönlichen Trello-Board — vom Account des zuständigen OMM — dass die Kampagne erstellt wurde und in Kürze live geht.</div>
+            </div>
+        </div>
+
+        <div class="pipe-step">
+            <div class="pipe-dot done">10</div>
+            <div class="pipe-card">
                 <div class="pipe-label auto">Automatisch</div>
                 <div class="pipe-title">Archivierung + Logging</div>
                 <div class="pipe-desc">Verwendete Creatives werden archiviert. Komplettes JSON-Log mit allen IDs, Einstellungen und Ergebnissen gespeichert.</div>
@@ -177,7 +204,7 @@
             <div class="pipe-card" style="border-color: rgba(255,159,26,0.3);">
                 <div class="pipe-label manual">Manuell — User muss prüfen</div>
                 <div class="pipe-title">Bedingte Logik + Absage-Seite im Formular</div>
-                <div class="pipe-desc">Die Meta API unterstützt keine bedingte Logik. Deshalb muss der User nach der Erstellung manuell im Formular verknüpfen:</div>
+                <div class="pipe-desc">Die Meta API unterstützt keine bedingte Logik. Deshalb muss der User nach der Erstellung manuell im Formular verknüpfen. <strong style="color: var(--orange);">Das kann nicht untergehen:</strong> Claude Code erinnert den User nach jeder Erstellung automatisch mit einer genauen Schritt-für-Schritt-Anleitung.</div>
                 <div class="pipe-detail">
                     1. Bedingte Logik aktivieren<br>
                     2. „Ja, ich bin bereit..." → weiter zu Frage 2<br>
@@ -286,4 +313,3 @@
 </div>
 </body>
 </html>
-
